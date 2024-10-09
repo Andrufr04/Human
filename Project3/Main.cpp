@@ -4,6 +4,8 @@
 #include "Programmer.h"
 #include "Designer.h"
 #include "Director.h"
+#include "Teacher.h"
+#include "Lawyer.h"
 using namespace std;
 
 int main()
@@ -28,4 +30,13 @@ int main()
 	d.Input("Irina", 20, "SecondCompany", 9000);
 	d.Output();
 
+	Teacher t("Oleg", 60, "It Step School", 700);
+	t.Output();
+	t.Input("Irina", 20, "¹66", 400);
+	t.Output();
+
+	Lawyer l("Marta", 45, "PhD", 3000);
+	l.Output();
+	l.Input("Irina", 20, "PhD", 4000);
+	l.Output();
 }
