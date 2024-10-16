@@ -8,7 +8,7 @@ Teacher::Teacher()
 	name = nullptr;
 	age = 12;
 	EducationalInstitution = nullptr;
-	Salary = 0;
+	salary = 0;
 }
 
 Teacher::Teacher(const char* n, int a, const char* E, double S) :Human(n, a)

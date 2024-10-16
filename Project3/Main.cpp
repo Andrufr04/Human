@@ -28,19 +28,19 @@ int main()
 		human = new Student("Oleg", 19, "Itstep", 9000);
 		break;
 	case 2:
-		human = new Teacher("Anna", 21, "middle", 2000);
+		human = new Teacher("Oleg", 60, "Itstep", 9000);
 		break;
 	case 3:
-		human = new Programmer("Oleg", 19, "Itstep", 2000);
+		human = new Programmer("Anna", 21, "middle", 2000);
 		break;
 	case 4:
-		human = new Designer("Oleg", 19, "Itstep", 111000);
+		human = new Designer("Sonya", 30, "illustrator", 500);
 		break;
 	case 5:
-		human = new Lawyer("Oleg", 19, "Itstep", 2000);
+		human = new Lawyer("Marta", 45, "PhD", 3000);
 		break;
 	case 6:
-		human = new Director("Oleg", 19, "Itstep", 2000);
+		human = new Director("Nastya", 19, "BestCmpany", 300000);
 		break;
 	default:
 		break;
