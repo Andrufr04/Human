@@ -18,6 +18,7 @@ Student::Student(const char* n, int a, const char* U, double S) :Human(n, a)
 	Univer = new char[strlen(U) + 1];
 	strcpy_s(Univer, strlen(U) + 1, U);
 }
+
 Student::~Student()
 {
 	delete[] Univer;
@@ -32,19 +33,20 @@ void Student::Output()
 }
 void Student::Input(const char* n, int a, const char* U, double S)
 {
-	if (name != nullptr)
-	{
-		delete[] name;
-	}
+	Human::Input(n, a);
+
 	if (Univer != nullptr)
 	{
 		delete[] Univer;
 	}
-	name = new char[strlen(n) + 1];
-	strcpy_s(name, strlen(n) + 1, n);
-	age = a;
+
 
 	Scholarship = S;
 	Univer = new char[strlen(U) + 1];
 	strcpy_s(Univer, strlen(U) + 1, U);
+}
+
+void Student::Salary()
+{
+	cout << "Student Scholarship: " << Scholarship;
 }

@@ -10,7 +10,47 @@ using namespace std;
 
 int main()
 {
-	Student a("Oleg",19,"Itstep",2000);
+	Human* human = nullptr;
+
+	cout << "1. Student" << endl;
+	cout << "2. Teacher" << endl;
+	cout << "3. Programmer" << endl;
+	cout << "4. Designer" << endl;
+	cout << "5. Lawyer" << endl;
+	cout << "6. Director" << endl;
+
+	int choice;
+	cin >> choice;
+
+	switch (choice)
+	{
+	case 1:
+		human = new Student("Oleg", 19, "Itstep", 9000);
+		break;
+	case 2:
+		human = new Teacher("Anna", 21, "middle", 2000);
+		break;
+	case 3:
+		human = new Programmer("Oleg", 19, "Itstep", 2000);
+		break;
+	case 4:
+		human = new Designer("Oleg", 19, "Itstep", 111000);
+		break;
+	case 5:
+		human = new Lawyer("Oleg", 19, "Itstep", 2000);
+		break;
+	case 6:
+		human = new Director("Oleg", 19, "Itstep", 2000);
+		break;
+	default:
+		break;
+	}
+
+	human->Output();
+	human->Salary();
+
+
+	/*Student a("Oleg",19,"Itstep",2000);
 	a.Output();
 	a.Input("Irina",20,"Politex",200);
 	a.Output();
@@ -38,5 +78,5 @@ int main()
 	Lawyer l("Marta", 45, "PhD", 3000);
 	l.Output();
 	l.Input("Irina", 20, "PhD", 4000);
-	l.Output();
+	l.Output();*/
 }

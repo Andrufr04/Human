@@ -52,4 +52,9 @@ void Designer::Input(const char* n, int a, const char* j, double s)
 	strcpy_s(jobTitle, strlen(j) + 1, j);
 }
 
+void Designer::Salary()
+{
+	cout << "Designer salary: " << salary;
+}
+
 
