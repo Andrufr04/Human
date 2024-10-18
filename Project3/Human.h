@@ -13,5 +13,5 @@ public:
 
 
 
-	~Human();
+	virtual ~Human() =0;
 };
